@@ -3,17 +3,22 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building second run'
+                echo 'Building third run'
             }
         }
         stage('Test') {
             steps {
-                echo 'Testing second run'
+                echo 'Testing third run'
             }
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying second run'
+                echo 'Deploying third run'
+            }
+        }
+        stage('Release') {
+            steps {
+                echo 'Releasing third run'
             }
         }
     }
